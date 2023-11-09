@@ -1,0 +1,198 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-size: 0.800em;
+    line-height: 1.6;
+    word-spacing: 2px;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    font-size: 2.125em;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    font-size: 23px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFC;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header-logo-burguer-container{
+    width: 100%;
+    height: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 32%;
+}
+
+.logo-required{
+    height: 45px;
+    margin: 0;   
+}
+
+#icon-burguer{
+    height: 30px;
+    width: 30px;
+    margin: 0;
+}
+
+.nav-container{
+    width: 100%;
+    height: 175px;
+    margin-top: 10px;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+}
+
+.nav-bar-ul{
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.nav-bar-ul > li{
+    margin-top: 13px;
+    color: #1D1D1F;
+}
+
+.first-section{
+width: 100%;
+/*height: 47.5em;*/
+background-color: #FFFFFF;
+/*border: 1px solid red;*/
+}
+
+.first-article{
+    width: 100%;
+    height: auto;
+    /*border: 1px solid blue;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img-undraw{
+    width: 18.25em;
+}
+
+.second-section{
+    width: 100%;
+    background-color: #FAFAFA;
+}
+
+.second-article{
+   
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 20px;
+    background: #FAFAFA;
+    padding: 15px;
+  }
+
+  .container img {
+    width: 100%;
+    display: block;
+    /*-webkit-filter: grayscale(1);
+    filter: grayscale(1);*/
+    transition: all 100ms ease-out;
+    border: 1px solid #1A8ACA;
+    border-radius: 10px;
+  }
+
+  .container img:hover {
+    transform: scale(1.04);
+    /*-webkit-filter: grayscale(0);
+    filter: grayscale(0);*/
+  }
+
+/*Prueba de carrousel*/
+
+.slider{
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track{
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 32 );
+}
+
+.slider .slide{
+    width: 200px;
+    margin: 0px 10px 0px 10px;
+    height: 123px;
+}
+
+.slider .slide img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes scroll{
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-200px * 16));
+        transform: translateX(calc(-200px * 16));
+    }
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #FAFAFA;   
+}
+
+.enlace-sin-estilo{
+    text-decoration: none;
+    color: #1A8ACA;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    gap: 2px;
+}
