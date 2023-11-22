@@ -12,16 +12,27 @@ p{
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     letter-spacing: 2px;
-    font-size: 11px;
+    font-size: 0.800em;
     line-height: 1.6;
     word-spacing: 2px;
 }
 
-h1{
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 7px;
-    margin-left: 0px;
+h1 {
+    /* font-family: 'Roboto', sans-serif; */
+    /* margin-bottom: 20px; */
+    /* margin: 0px 0px 0px -35px; */
     font-size: 2.125em;
+    /* text-shadow: 4px 5px 4px rgba(0,0,0,0.86); */
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    /* padding: 80px 50px; */
+    /* text-align: center; */
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    color: #e0dfdc;
+    /* background-color: #333; */
+    letter-spacing: .1em;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+    
 }
 
 h2{
@@ -94,22 +105,53 @@ header{
     color: #1D1D1F;
 }
 
-main{
-    width: 100%;
-    height: 93vh;
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-    display: flex;
-    align-items: center;
-}
 
 .first-section{
-    width: 95%;
-    height: 80vh;
-    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
 }
 
 .first-article{
+    position: relative;
+   background-color: #000;
+}
+
+.first-article::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    opacity: 0.4;
     width: 100%;
+    height: 100vh;  
+    background: url(../images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg) no-repeat center center; 
+    background-size: cover;
+}
+
+.image-one-container{
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 38%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FAFAFA;
+}
+
+.image-one-container > p{
+        text-shadow: 4px 5px 4px rgba(0,0,0,0.86);
+        margin: 20px 10px 0px 10px;
+        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+        
 }
 
 .first-section > h1{
@@ -125,14 +167,24 @@ main{
     margin-top: 21px;
 }
 
-.second-article > h2{
+.first-article > h2{
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
+.container-tarjetas{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    max-width: 438px;
+}
+
 .tarjetas-sociales1{
-    width: 140px;
-    height: 105px;
+    width: 8.5em;
+    height: 7em;
     display: inline-block;
     border-radius: 10px;
     margin: 5px;
@@ -146,7 +198,7 @@ main{
 
 .tarjeta_mapa{
     width: 100%;
-    height: 100%;
+    height: 100px;
     border-radius: 10px;
     background: #1e130c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
@@ -206,7 +258,7 @@ ion-icon{
 
 .tarjeta_correo{
     width: 100%;
-    height: 100%;
+    height: 100px;
     border-radius: 10px;
     background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     background-blend-mode: multiply,multiply;
@@ -258,7 +310,7 @@ ion-icon{
 
 .tarjeta_telefono{
     width: 100%;
-    height: 100%;
+    height: 100px;
     border-radius: 10px;
     background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
     text-align: center; 
@@ -307,7 +359,7 @@ ion-icon{
 
 .tarjeta_instagram{
     width: 100%;
-    height: 100%;
+    height: 100px;
     border-radius: 10px;
     background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
     text-align: center; 
@@ -356,7 +408,7 @@ ion-icon{
 
 .tarjeta_twitter{
     width: 100%;
-    height: 100%;
+    height: 100px;
     border-radius: 10px;
     background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
     text-align: center; 
@@ -405,7 +457,7 @@ ion-icon{
 
 .tarjeta_facebook{
     width: 100%;
-    height: 100%;
+    height: 100px;
     border-radius: 10px;
     background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
     text-align: center; 
@@ -469,24 +521,6 @@ footer{
     gap: 2px;
 }
 
-@media(min-width: 645px){
-    .first-section{
-        margin-top: 8%;
-      }
- 
-      .img-undraww{ 
-       width: 327px;
-      }
-
-    .second-article{
-        margin-top: 50px;
-    }
-
-    .first-article > p{
-        margin-top: 15px;
-        font-size: 15px;
-    }
-}
 
 @media (min-width: 1024px){
    
@@ -500,11 +534,26 @@ footer{
         margin-bottom: 10px;
         gap: 22%;
     }
+
+    h1{
+        font-size: 5em;
+        margin: 0px 0px 20px 0px;
+    }
+
+    p{
+        font-size: 1.1em;
+    }
+
+    .header-logo-burguer-container{
+        justify-content: inherit;
+        margin-left: 50px;
+    }
    
     #icon-burguer{
         display: none;
     }
   
+
     .nav-bar-desktop{
         width: 50%;
         height: 50px;
@@ -563,9 +612,6 @@ footer{
       }
   }
 
-  .first-section{
-    margin-top: 8%;
-  }
 
 .second-article{
     margin-top: 75px;

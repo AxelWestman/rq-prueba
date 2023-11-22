@@ -17,11 +17,22 @@ p{
     word-spacing: 2px;
 }
 
-h1{
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 20px;
-    margin-left: 0px;
+h1 {
+    /* font-family: 'Roboto', sans-serif; */
+    /* margin-bottom: 20px; */
+    /* margin: 0px 0px 0px -35px; */
     font-size: 2.125em;
+    /* text-shadow: 4px 5px 4px rgba(0,0,0,0.86); */
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    /* padding: 80px 50px; */
+    /* text-align: center; */
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    color: #e0dfdc;
+    /* background-color: #333; */
+    letter-spacing: .1em;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+    margin-left: 0px;
 }
 
 h2{
@@ -96,8 +107,8 @@ header{
 
 .first-section{
     width: 100%;
-    height: 47.5em;
-    background-color: #062f3f;
+    height: 100vh;
+    background-color: #000000;
 }
 
 .image-one{
@@ -113,11 +124,11 @@ header{
     left: 0;
     top: 0;
     z-index: 0;
-    opacity: 0.5;
+    opacity: 0.4;
     width: 100%;
-    height: 47.5em;  
+    height: 100vh;  
     background: url(../images/luca-bravo-XJXWbfSo2f0-unsplash-min.jpg) no-repeat center center; 
-    background-size: 600px 755px;
+    background-size: 170% 100vh;
 }
 
 .image-one-container{
@@ -134,6 +145,13 @@ header{
     flex-direction: column;
     text-align: left;
     color: #FAFAFA;
+}
+
+.image-one-container > p{
+        text-shadow: 4px 5px 4px rgba(0,0,0,0.86);
+        margin-top: 20px;
+        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    
 }
 
 .second-section{
@@ -170,7 +188,7 @@ header{
     flex-direction: column;
     align-items: center;
     color: #1D1D1F;
-    background-color: #FFFFFF;
+    background-color: #FAFAFA;
 }
 
 .third-article{
@@ -188,8 +206,18 @@ header{
     margin-bottom: 15px;
 }
 
+.image-and-icons{
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    margin-top: 40px;
+}
+
 #img-undraw{
-    width: 18.25em;
+    width: 15.25em;
     margin: 0;
 }
 
@@ -235,7 +263,7 @@ ion-icon{
 }
 
 .node{
-    top: -14.75em;
+    top: -13.75em;
     left: 7em;
     margin: 0;
     transform: translate(0px);
@@ -276,7 +304,8 @@ ion-icon{
   border: none;
   background-color: #1A8ACA;
   box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
-  margin-top: -250px;
+  margin-top: -224px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
 }
@@ -369,16 +398,17 @@ footer{
     display: none;
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
-    .image-one::before{
-        background-size: 1023px 755px;
-    }
-
-}
 
 @media (min-width: 1024px){
    
-    
+    h1{
+        font-size: 5.125em;
+        margin: 0px 0px 20px 0px;
+    }
+
+    br{
+        display: none;
+    }
 
     header{
         width: 100%;
@@ -401,6 +431,11 @@ footer{
    
     ion-icon{
         margin-top: 20px;
+    }
+
+    .header-logo-burguer-container{
+        justify-content: inherit;
+        margin-left: 50px;
     }
 
     #icon-burguer{
@@ -474,6 +509,14 @@ footer{
         background-size: 100% 100vh;
     }
 
+    .image-one-container > p{
+        font-size: 20px;
+    }
+
+    .second-section{
+        margin: 50px 0px 50px 0px;
+    }
+
     .second-article{
         width: 92%;
         display: grid;
@@ -501,6 +544,10 @@ footer{
         width: 25.25em;
     }
 
+    .third-section{
+        margin: 0px 0px 50px 0px;
+    }
+
     .third-article {
         width: 92%;
         display: grid;
@@ -523,15 +570,23 @@ footer{
         grid-column-start: 2;
     }
 
+    .image-and-icons{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        display: contents;
+        margin: 0 auto;
+    }
+
     #img-undraw{
         grid-column-start: 1;
         grid-row-start: 1;
         grid-row-end: 4;
-        width: 29em;
+        width: 20em;
+        margin: 0 auto;
     }
 
     .android {
-        top: 5.25em;
+        top: -0.75em;;
         margin: 0px;
         left: 3em;
         transform: translate(0px);
@@ -541,7 +596,7 @@ footer{
     }
 
     .angular {
-        top: 5.1em;
+        top: -0.9em;
         left: 9.5em;
         margin: 0px;
         transform: translate(0px);
@@ -551,7 +606,7 @@ footer{
     }
 
     .node {
-        top: 5.25em;
+        top: -0.75em;
         left: 23em;
         margin: 0px;
         transform: translate(0px);
@@ -561,7 +616,7 @@ footer{
     }
 
     .ionic {
-        top: 5.25em;
+        top: -0.75em;
         left: 16.5em;
         margin: 0px;
         transform: translate(0px);
@@ -571,10 +626,13 @@ footer{
     }
 
     .div-boton{
-        grid-column-start: 1;
-        grid-row-start: 4;
-        position: relative;
-        top: -39px;
+        grid-column-start: 2;
+        grid-row-start: 5;
+        margin-top:initial;
+    }
+
+    .fourd-section{
+        margin: 0px 0px 50px 0px;
     }
 
     .fourd-article{
@@ -649,3 +707,432 @@ footer{
 
 
 }
+
+@media (min-width: 1037px){
+    .android{
+        top: 0.25em ;
+    }
+
+    .angular{
+        top: 0.25em ;
+    }
+
+    .node{
+        top: 0.25em ;
+    }
+
+    .ionic{
+        top: 0.25em ;
+    }
+
+}
+
+@media (min-width: 1115px){
+    .android{
+        top: 1.25em;
+        left: 4em;
+    }
+
+    .angular{
+        top: 1.25em;
+        left: 10em;
+    }
+
+    .node{
+        top: 1.25em;
+        left: 23em;
+    }
+
+    .ionic{
+        top: 1.25em ;
+    }
+
+}
+
+@media (min-width: 1172px){
+    .android{
+        top: 1.25em;
+        left: 5em;
+    }
+
+    .angular{
+        top: 1.25em;
+        left: 11.5em;
+    }
+
+    .node{
+        top: 1.25em;
+        left: 24em;
+    }
+
+    .ionic{
+        top: 1.25em ;
+        left: 17.5em
+    }
+
+}
+
+@media (min-width: 1222px){
+    .android{
+        top: 2.25em;
+        left: 6em;
+    }
+
+    .angular{
+        top: 2.25em;
+        left: 12.5em;
+    }
+
+    .node{
+        top: 2.25em;
+        left: 25em;
+    }
+
+    .ionic{
+        top: 2.25em ;
+        left: 18.5em
+    }
+
+}
+
+@media (min-width: 1264px){
+    h1{
+        width: 14.125em;
+    }
+}
+
+@media(min-width: 1291px){
+    .image-one-container{
+        width:1150px;
+    }
+
+
+
+}
+
+@media (min-width: 1320px){
+    .android{
+        top: 3.25em;
+        left: 8em;
+    }
+
+    .angular{
+        top: 3.25em;
+        left: 14.5em;
+    }
+
+    .node{
+        top: 3.25em;
+        left: 27em;
+    }
+
+    .ionic{
+        top: 3.25em ;
+        left: 20.5em
+    }
+
+}
+
+@media (min-width: 1425px){
+    .android{
+        top: 4.25em;
+        left: 9em;
+    }
+
+    .angular{
+        top: 4.25em;
+        left: 15.5em;
+    }
+
+    .node{
+        top: 4.25em;
+        left: 28em;
+    }
+
+    .ionic{
+        top: 4.25em ;
+        left: 21.5em
+    }
+
+}
+
+
+@media (min-width: 1480px){
+    .android{
+        top: 4.25em;
+        left: 10em;
+    }
+
+    .angular{
+        top: 4.25em;
+        left: 16.5em;
+    }
+
+    .node{
+        top: 4.25em;
+        left: 29em;
+    }
+
+    .ionic{
+        top: 4.25em ;
+        left: 22.5em
+    }
+
+}
+
+@media (min-width: 1580px){
+    .android{
+        top: 5.25em;
+        left: 11em;
+    }
+
+    .angular{
+        top: 5.25em;
+        left: 17.5em;
+    }
+
+    .node{
+        top: 5.25em;
+        left: 30em;
+    }
+
+    .ionic{
+        top: 5.25em ;
+        left: 23.5em
+    }
+
+}
+
+@media (min-width: 1620px){
+    .android{
+        top: 5.25em;
+        left: 12em;
+    }
+
+    .angular{
+        top: 5.25em;
+        left: 18.5em;
+    }
+
+    .node{
+        top: 5.25em;
+        left: 31em;
+    }
+
+    .ionic{
+        top: 5.25em ;
+        left: 24.5em
+    }
+
+}
+
+@media (min-width: 1720px){
+    .android{
+        top: 5.25em;
+        left: 13em;
+    }
+
+    .angular{
+        top: 5.25em;
+        left: 19.5em;
+    }
+
+    .node{
+        top: 5.25em;
+        left: 32em;
+    }
+
+    .ionic{
+        top: 5.25em ;
+        left: 25.5em
+    }
+
+}
+
+@media (min-width: 1769px){
+    .android{
+        top: 5.25em;
+        left: 15em;
+    }
+
+    .angular{
+        top: 5.25em;
+        left: 21.5em;
+    }
+
+    .node{
+        top: 5.25em;
+        left: 34em;
+    }
+
+    .ionic{
+        top: 5.25em ;
+        left: 27.5em
+    }
+
+}
+
+@media (min-width: 1880px){
+    .android{
+        top: 5.25em;
+        left: 17em;
+    }
+
+    .angular{
+        top: 5.25em;
+        left: 23.5em;
+    }
+
+    .node{
+        top: 5.25em;
+        left: 36em;
+    }
+
+    .ionic{
+        top: 5.25em ;
+        left: 29.5em
+    }
+
+}
+
+@media (min-width: 2011px){
+    .android{
+        top: 6.25em;
+        left: 19em;
+    }
+
+    .angular{
+        top: 6.25em;
+        left: 25.5em;
+    }
+
+    .node{
+        top: 6.25em;
+        left: 38em;
+    }
+
+    .ionic{
+        top: 6.25em ;
+        left: 31.5em
+    }
+
+}
+
+@media (min-width: 2165px){
+    .android{
+        top: 6.25em;
+        left: 20em;
+    }
+
+    .angular{
+        top: 6.25em;
+        left: 26.5em;
+    }
+
+    .node{
+        top: 6.25em;
+        left: 39em;
+    }
+
+    .ionic{
+        top: 6.25em ;
+        left: 32.5em
+    }
+
+}
+
+@media (min-width: 2270px){
+    .android{
+        top: 6.25em;
+        left: 21.5em;
+    }
+
+    .angular{
+        top: 6.25em;
+        left: 28em;
+    }
+
+    .node{
+        top: 6.25em;
+        left: 40.5em;
+    }
+
+    .ionic{
+        top: 6.25em ;
+        left: 34.5em
+    }
+
+}
+
+@media (min-width: 2340px){
+    .android{
+        top: 6.25em;
+        left: 22.5em;
+    }
+
+    .angular{
+        top: 6.25em;
+        left: 29em;
+    }
+
+    .node{
+        top: 6.25em;
+        left: 41.5em;
+    }
+
+    .ionic{
+        top: 6.25em ;
+        left: 35.5em
+    }
+
+}
+
+@media (min-width: 2410px){
+    .android{
+        top: 6.25em;
+        left: 23.5em;
+    }
+
+    .angular{
+        top: 6.25em;
+        left: 30em;
+    }
+
+    .node{
+        top: 6.25em;
+        left: 42.5em;
+    }
+
+    .ionic{
+        top: 6.25em ;
+        left: 36.5em
+    }
+
+}
+
+@media (min-width: 2500px){
+    .android{
+        top: 6.25em;
+        left: 24.5em;
+    }
+
+    .angular{
+        top: 6.25em;
+        left: 31em;
+    }
+
+    .node{
+        top: 6.25em;
+        left: 43.5em;
+    }
+
+    .ionic{
+        top: 6.25em ;
+        left: 37.5em
+    }
+
+}
+
+
+
+

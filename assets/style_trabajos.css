@@ -17,11 +17,22 @@ p{
     word-spacing: 2px;
 }
 
-h1{
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 20px;
-    margin-left: 0px;
-    font-size: 2.125em;
+h1 {
+  /* font-family: 'Roboto', sans-serif; */
+  /* margin-bottom: 20px; */
+  /* margin: 0px 0px 0px -35px; */
+  font-size: 2.125em;
+  /* text-shadow: 4px 5px 4px rgba(0,0,0,0.86); */
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  /* padding: 80px 50px; */
+  /* text-align: center; */
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: #e0dfdc;
+  /* background-color: #333; */
+  letter-spacing: .1em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+  
 }
 
 h2{
@@ -94,43 +105,74 @@ header{
     color: #1D1D1F;
 }
 
-.first-section{
-width: 100%;
-/*height: 47.5em;*/
-background-color: #FFFFFF;
-/*border: 1px solid red;*/
-}
-
-.first-article{
-    width: 92%;
-    height: auto;
-    /*border: 1px solid blue;*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.first-article >p{
-  color: #767677;
-}
-
-#img-undraw{
-    width: 18.25em;
-}
 
 .second-section{
     width: 100%;
     background-color: #FAFAFA;
+    
 }
 
 
 
+.first-section{
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  
+}
+
+.first-article{
+ position: relative;
+ background-color: #000;
+ 
+}
+
+.first-article::before{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  opacity: 0.4;
+  width: 100%;
+  height: 100vh;  
+  background: url(../images/desola-lanre-ologun-YgOCJz9uGMk-unsplash-min.jpg) no-repeat center center; 
+  background-size: cover;
+  
+}
+
+.image-one-container{
+  width: 92%;
+  height: 300px;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 38%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  color: #FAFAFA;
+}
+
+.image-one-container > p{
+      text-shadow: 4px 5px 4px rgba(0,0,0,0.86);
+      margin-top: 20px;
+      font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    text-align: center;
+}
+
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 25%));
+    justify-content: center;
     gap: 20px;
     background: #FAFAFA;
     padding: 15px;
+    padding-top: 50px;
   }
 
   .imagen-efecto1{
@@ -142,8 +184,9 @@ background-color: #FFFFFF;
     transition: all 100ms ease-out;
     border: 1px solid #1A8ACA;
     border-radius: 10px;
-    background-size: cover;
+    background-size: 100% 100%;
     background-image: url("../images/Trabajos/work1.jpg");
+    
   }
 
   .imagen-efecto2{
@@ -155,7 +198,7 @@ background-color: #FFFFFF;
     transition: all 100ms ease-out;
     border: 1px solid #1A8ACA;
     border-radius: 10px;
-    background-size: cover;
+    background-size: 100% 100%;
     background-image: url("../images/Trabajos/work2.jpg");
   }
 
@@ -168,7 +211,7 @@ background-color: #FFFFFF;
     transition: all 100ms ease-out;
     border: 1px solid #1A8ACA;
     border-radius: 10px;
-    background-size: cover;
+    background-size: 100% 100%;
     background-image: url("../images/Trabajos/work3.jpg");
   }
 
@@ -181,7 +224,7 @@ background-color: #FFFFFF;
     transition: all 100ms ease-out;
     border: 1px solid #1A8ACA;
     border-radius: 10px;
-    background-size: cover;
+    background-size: 100% 100%;
     background-image: url("../images/Trabajos/work4.jpg");
   }
 
@@ -194,7 +237,7 @@ background-color: #FFFFFF;
     transition: all 100ms ease-out;
     border: 1px solid #1A8ACA;
     border-radius: 10px;
-    background-size: cover;
+    background-size: 100% 100%;
     background-image: url("../images/Trabajos/work5.jpg");
   }
 
@@ -207,7 +250,7 @@ background-color: #FFFFFF;
     transition: all 100ms ease-out;
     border: 1px solid #1A8ACA;
     border-radius: 10px;
-    background-size: cover;
+    background-size: 100% 100%;
     background-image: url("../images/Trabajos/work6.jpg");
   }
   
@@ -282,6 +325,10 @@ background-color: #FFFFFF;
 
 /*Prueba de carrousel*/
 
+.section-carrousel{
+  margin: 50px 0px 50px 0px;
+}
+
 .slider{
     width: 75vw;
     height: auto;
@@ -324,7 +371,6 @@ footer{
     display: flex;
     align-items: center;
     background-color: #FAFAFA;   
-    margin-top: 20px
 }
 
 .enlace-sin-estilo{
@@ -342,6 +388,7 @@ footer{
     color: #767677;
 }
 
+
 @media (min-width: 1024px){
    
   header{
@@ -354,6 +401,16 @@ footer{
       margin-bottom: 10px;
       gap: 22%;
   }
+
+  h1{
+    font-size: 5em;
+    margin: 0px 0px 20px 0px;
+}
+
+  .header-logo-burguer-container{
+    justify-content: inherit;
+    margin-left: 50px;
+}
  
   #icon-burguer{
       display: none;
@@ -417,4 +474,18 @@ footer{
     }
 }
 
+
+
+p{
+  font-size: 1.1em;
 }
+
+.first-article{
+  display: block;
+}
+
+}
+
+
+
+
