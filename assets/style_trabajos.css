@@ -50,6 +50,16 @@ header{
     background-color: #FAFAFC;
     margin-top: 10px;
     margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.animate__fadeIn{
+  animation-duration: 4s !important;
+}
+
+.animate__fadeOut{
+  animation-duration: 0.3s !important;
 }
 
 .header-logo-burguer-container{
@@ -59,6 +69,8 @@ header{
     align-items: center;
     justify-content: space-evenly;
     gap: 32%;
+    position: relative;
+    z-index: 2;
 }
 
 .logo-required{
@@ -77,9 +89,13 @@ header{
 }
 
 .nav-container{
-    width: 100%;
-    height: 175px;
-    margin-top: 10px;
+  width: 100%;
+  height: 175px;
+  /* margin-top: 10px; */
+  z-index: 1;
+  top: 50px;
+  position: absolute;
+  background-color: #FAFAFA;
 }
 
 .nav-bar{

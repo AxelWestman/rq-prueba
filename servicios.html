@@ -21,18 +21,18 @@
                 <ul class="nav-bar-ul-desktop">
                     <li class="list-desktop"><a  href="index.html">Inicio</a></li>
                     <li class="list-desktop"><a href="trabajos.html">Trabajos</a></li>
-                    <li class="list-desktop"><a href="#">Soporte</a></li>
+                    <li class="list-desktop"><a href="soporte.html">Soporte</a></li>
                     <li class="list-desktop"><a href="servicios.html">Servicios</a></li>
                     <li class="list-desktop"><a href="contactanos.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="nav-container animate__animated" style="display: none" id="nav-id">
+        <div class="nav-container animate__animated   animate__slideInDown" style="display: none" id="nav-id">
             <nav class="nav-bar">
-                <ul class="nav-bar-ul">
+                <ul class="nav-bar-ul animate__animated animate__fadeIn" id="lista-desplegable">
                     <li><a  href="index.html">Inicio</a></li>
                     <li><a href="trabajos.html">Trabajos</a></li>
-                    <li>Soporte</li>
+                    <li><a href="soporte.html">Soporte</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="contactanos.html">Contacto</a></li>
                 </ul>
@@ -48,10 +48,33 @@
                 </div>
             </article>
         </section>
+        <section class="second-section">
+            <article class="second-article">
+                <div class="container-app">
+                    <img src="images/logorqappclient.png" class="rq-app-logo">
+                    <div class="separador"></div>
+                    <h2>RqApp Client</h2>
+                </div>
+                <div class="qr-y-lista">
+                <p>Lea el siguiente QR con el celular para bajar la app RqAppClient con el cual usted podrá:</p>
+                <img src="images/qrRqappClient28112022.png" class="qr">
+                <ul class="lista">
+                    <li><ion-icon name="checkmark-outline" class="checkmark"></ion-icon>Realizar pedidos </li>
+                    <li><ion-icon name="checkmark-outline" class="checkmark"></ion-icon>Comunicación por chat privado</li>
+                    <li><ion-icon name="checkmark-outline" class="checkmark"></ion-icon>Obtener información</li>
+                    <li><ion-icon name="checkmark-outline" class="checkmark"></ion-icon>Descargar nuestras facturas</li>
+                    <li>(Próximamente pago de soporte por MP)</li>
+                    </ul>
+                <p>(Solo para clientes de nuestra empresa)</p>
+                </div>
+                <h2 class="manual-de-uso"><a href="#">Manual de uso</a></h2>
+                <video src="files/RequiredappClient-video.mp4" controls="true"></video>
+            </article>
+        </section>
     </main>
     <footer>
         <span><a href="contactanos.html" class="enlace-sin-estilo">Contacto</a></span>
-        <span><a href="#" class="enlace-sin-estilo">Soporte</a></span>
+        <span><a href="soporte.html" class="enlace-sin-estilo">Soporte</a></span>
         <span><a href="#" class="enlace-sin-estilo">Políticas de privacidad</a></span>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
