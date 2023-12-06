@@ -43,15 +43,17 @@ h2{
 }
 
 header{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #FAFAFC;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: relative;
-    z-index: 2;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FAFAFC;
+  /* margin-top: 10px; */
+  justify-content: center;
+  /* margin-bottom: 10px; */
+  position: relative;
+  z-index: 2;
 }
 
 .animate__fadeIn{
@@ -150,7 +152,7 @@ header{
   left: 0;
   top: 0;
   z-index: 0;
-  opacity: 0.4;
+  opacity: 0.6;
   width: 100%;
   height: 100vh;  
   background: url(../images/desola-lanre-ologun-YgOCJz9uGMk-unsplash-min.jpg) no-repeat center center; 
@@ -362,7 +364,7 @@ header{
 .slider .slide{
     width: 200px;
     margin: 0px 10px 0px 10px;
-    height: 95px;
+    height: 56px;
 }
 
 .slider .slide img{
@@ -382,11 +384,17 @@ header{
 }
 
 footer{
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    background-color: #FAFAFA;   
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #FAFAFA;
+  justify-content: center;
+  gap: 35px;
+}
+
+footer > span{
+  margin: 0;
 }
 
 .enlace-sin-estilo{
@@ -398,7 +406,7 @@ footer{
 }
 
 .parrafo-footer{
-    font-size: 8px;
+    font-size: 9px;
     text-align: center;
     margin: 10px 0px 10px 0px;
     color: #767677;
@@ -413,8 +421,6 @@ footer{
       flex-direction: row;
       align-items: center;
       background-color: #FAFAFC;
-      margin-top: 10px;
-      margin-bottom: 10px;
       gap: 22%;
   }
 
@@ -424,8 +430,8 @@ footer{
 }
 
   .header-logo-burguer-container{
-    justify-content: inherit;
-    margin-left: 50px;
+    justify-content: flex-start;
+    margin-left: 3.5%;
 }
  
   #icon-burguer{
@@ -437,7 +443,7 @@ footer{
       height: 50px;
       display: flex;
       align-items: center;
-      margin: 0px 42px 0px 0px;
+      margin: 0px 5% 0px 0px;
   }
 
   .nav-bar-desktop-links{
@@ -488,6 +494,10 @@ footer{
     &:before{
       width:100%;
     }
+}
+
+.parrafo-footer{
+  font-size: 12px;
 }
 
 
