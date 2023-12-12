@@ -9,9 +9,8 @@ a{
 }
 
 p{
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
     font-size: 0.800em;
     line-height: 1.6;
     word-spacing: 2px;
@@ -392,7 +391,6 @@ h3{
 }
 
 .texto-desarrollos{
-    font-family: 'Open Sans', sans-serif;
     color:  #767677;
 }
 
@@ -608,7 +606,7 @@ footer{
     }
 
     .android {
-        top: -0.75em;;
+        top: 1.25em;;
         margin: 0px;
         left: 3em;
         transform: translate(0px);
@@ -618,7 +616,7 @@ footer{
     }
 
     .angular {
-        top: -0.9em;
+        top: 1.25em;
         left: 9.5em;
         margin: 0px;
         transform: translate(0px);
@@ -628,7 +626,7 @@ footer{
     }
 
     .node {
-        top: -0.75em;
+        top: 1.25em;
         left: 23em;
         margin: 0px;
         transform: translate(0px);
@@ -638,7 +636,7 @@ footer{
     }
 
     .ionic {
-        top: -0.75em;
+        top: 1.25em;
         left: 16.5em;
         margin: 0px;
         transform: translate(0px);
@@ -749,6 +747,25 @@ footer{
 
 }
 
+@media (min-width: 1095px){
+    .android{
+        top: 1.25em ;
+    }
+
+    .angular{
+        top: 1.25em ;
+    }
+
+    .node{
+        top: 1.25em ;
+    }
+
+    .ionic{
+        top: 1.25em ;
+    }
+
+}
+
 @media (min-width: 1115px){
     .android{
         top: 1.25em;
@@ -773,22 +790,22 @@ footer{
 
 @media (min-width: 1172px){
     .android{
-        top: 1.25em;
+        top: 2.25em;
         left: 5em;
     }
 
     .angular{
-        top: 1.25em;
+        top: 2.25em;
         left: 11.5em;
     }
 
     .node{
-        top: 1.25em;
+        top: 2.25em;
         left: 24em;
     }
 
     .ionic{
-        top: 1.25em ;
+        top: 2.25em ;
         left: 17.5em
     }
 
@@ -821,14 +838,29 @@ footer{
     h1{
         width: 14.125em;
     }
+
+    .android{
+        top: 3.25em;
+    }
+
+    .angular{
+        top: 3.25em;
+    }
+
+    .ionic{
+        top: 3.25em;
+    }
+
+    .node{
+        top:3.25em;
+    }
+
 }
 
 @media(min-width: 1291px){
     .image-one-container{
         width:1150px;
     }
-
-
 
 }
 
@@ -996,22 +1028,22 @@ footer{
 
 @media (min-width: 1880px){
     .android{
-        top: 5.25em;
+        top: 6.25em;
         left: 17em;
     }
 
     .angular{
-        top: 5.25em;
+        top: 6.25em;
         left: 23.5em;
     }
 
     .node{
-        top: 5.25em;
+        top: 6.25em;
         left: 36em;
     }
 
     .ionic{
-        top: 5.25em ;
+        top: 6.25em ;
         left: 29.5em
     }
 
